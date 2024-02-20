@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembroke_Welsh_Corgi</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 24px;
+        font-family: monospace;
+        font-weight: 200;
+      }
+      h1 strong {
+        font-weight: bold;
+        font-size: 30px;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 18px;
+        font-family: monospace;
+      }
+      hr {
+        border-top: 2px dotted;
+        border-bottom: none;
+        color: black;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 15px;
+      }
+      p {
+        text-align: left;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        line-height: 1.5;
+        font-size: 12px;
+        margin: 20px 0 10px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background-color: #dc9c52;
+        color: white;
+        font-size: 15px;
+        font-family: monospace;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0.3);
+      }
+      button:hover {
+        opacity: 0.6;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+      }
+
+      .colored-text {
+        font-size: 11px;
+        font-weight: bold;
+        padding: 0;
+      }
+
+      .more-info {
+        text-align: left;
+        color: #a44b4a;
+        text-decoration: none;
+        font-family: monospace;
+        margin: 0 auto;
+      }
+      .more-info:hover {
+        text-decoration: underline;
+        color: red;
+      }
+
+      .content {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 10px 15px;
+        border-radius: 10px;
+        background: linear-gradient(
+          106.5deg,
+          rgba(255, 215, 185, 0.91) 23%,
+          rgba(223, 159, 247, 0.8) 93%
+        );
+      }
+      .footer {
+        font-family: monospace;
+        font-size: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1><strong>Pembroke Welsh Corgis</strong><br /></h1>
+      <h2>
+        <em
+          >Spilling the Beans on amusing habits and charismatic
+          personalities...</em
+        >
+      </h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/776/original/Snapchat-705103633.jpg?1705980597"
+        alt="corgis"
+      />
+      <hr />
+      <p>
+        The Pembroke Welsh Corgi pair, defying traditional canine expectations,
+        reveal themselves as petite entertainers, tipping the scales at a
+        delightful 12 to 14 kilograms. Descending from herding nobility, their
+        regal demeanor amusingly clashes with their vertically challenged
+        stature. Despite their petite size, these Corgis showcase nimble
+        agility, zipping around like miniature superheroes. Their coat hues,
+        ranging from rustic red to pristine white, not only captivate attention
+        but also make a fashion statement, leaving one to ponder if a hidden
+        stylist resides in their doghouse. Originally bred for cattle herding,
+        these vertically challenged rascals unexpectedly assume the role of
+        cowboys in the canine world. Envision them politely directing majestic
+        cows—a comedic spectacle waiting to unfold! Essentially, this Corgi duo
+        transcends the role of mere companions; they're the stand-up comedians
+        of the canine realm, delivering a daily dose of charming absurdity and
+        affection to brighten even the most challenging days.
+
+        <br /><br />
+        <span class="colored-text"
+          >Interesting Tidbit: In Welsh folklore, Corgis, renowned for their
+          short stature and unwavering enthusiasm, were once thought to serve as
+          the mounts for woodland fairies. Therefore, when you observe these
+          lively canines zooming around like furry superheroes, picture them
+          embarking on a magical escapade alongside woodland fairies.
+        </span>
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Pembroke_Welsh_Corgi"
+        target="_blank"
+        class="more-info"
+      >
+        Learn more about Corgis on Wikipedia
+      </a>
+      <button class="find-animal">Click Here 🐾</button>
+
+      <p class="footer">Coded by Jayde White</p>
+    </div>
+
+    <script>
+      function search() {
+        let name = prompt("What is your name?");
+        let animal = prompt("what is your favourite animal?");
+        animal = animal.toLowerCase();
+        let smileyFace = "\u{1F604}";
+        if (animal === "dog") {
+          alert("Hi" + " " + name + ", Welcome to the pack! 🐾🐾 ");
+        } else {
+          alert(
+            "Hi" + " " + name + ", Enjoy your animal friend" + " " + smileyFace
+          );
+        }
+      }
+      let findAnimal = document.querySelector(".find-animal");
+      findAnimal.addEventListener("click", search);
+    </script>
+  </body>
+</html>
